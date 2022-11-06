@@ -8,7 +8,10 @@ public class Managers : MonoBehaviour
     static Managers Instance { get { init();  return s_instance; } }
 
     InputManager _input = new InputManager();
+    ResourceManager _resouce = new ResourceManager();
+
     public static InputManager Input {  get { return Instance._input; } }
+    public static ResourceManager Resource { get { return Instance._resouce; } }
 
     // Start is called before the first frame update
     void Start()
